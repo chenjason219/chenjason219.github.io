@@ -1,0 +1,446 @@
+/* globals */
+body{
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, p{
+    text-align: center;
+}
+
+h1, h2{
+    color: #201E20;
+}
+
+p{
+    font-size: 20px;
+    color: #201E20;
+    text-align: left;
+}
+
+.layout{
+    height: 100vh;
+}
+
+ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* sidebars */
+.side-bar-right{
+    position: fixed;
+    top: 0;
+    right: 1.5rem;
+    z-index: 1;
+}
+
+.side-bar-left{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 1.5rem;
+    z-index: 1;
+}
+
+.side-bar-left a{
+    writing-mode: vertical-rl;
+}
+
+.email-wrapper::after{
+    content: "";
+    display: block;
+    background-color: #201E20;
+    width: 1px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.email{
+    margin: 1rem;
+    color: #201E20;
+}
+
+.email:hover{
+    color: white;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+}
+
+.socials li{
+    margin-top: 2rem;
+}
+
+.socials::before{
+    content: "";
+    display: block;
+    background-color: #201E20;
+    width: 1px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.fa-brands{
+    color: #201E20;
+}
+
+.fa-brands:hover{
+    color: red;
+    transform: scale(1.2);
+    transition: ease 0.2s;
+}
+
+/* head and greet */
+
+.container{
+    position: relative;
+    display: flex;
+    margin: 5rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    position: relative;
+    height:18.75rem;
+    width: 16.25rem;
+    background: #f0d8b1;
+    border-radius: 50%;
+    box-shadow: 0 0px 2px black;
+    animation: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.sideburnL{
+    position: absolute;
+    background: black;
+    height: 9rem;
+    width: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0px 2px black;
+}
+
+.sideburnR{
+    position: absolute;
+    background: black;
+    height: 9rem;
+    width: 2rem;
+    border-radius: 2rem;
+    left: 14.25rem;
+    box-shadow: 0 0px 2px black;
+}
+
+.hair .top-left{
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 5rem;
+    top: -1.25rem;
+    border-radius: 40%;
+    box-shadow: 0 0px 2px black;
+}
+
+.hair .top-right{
+    position: absolute;
+    background: black;
+    width: 90%;
+    height: 6rem;
+    top: -2.5rem;
+    left: 1.875rem;
+    border-radius: 50%;
+    box-shadow: 0 0px 2px black;
+}
+
+.hair .bottom{
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 4.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0px 2px black;
+}
+
+.eyes{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 6.25rem;
+    justify-content: center;
+}
+
+.eyeL{
+    background: white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 1.25rem;
+    box-shadow: 0 0px 2px black;
+}
+
+.eyebrowL{
+    position: relative;
+    background: black;
+    width: 4rem;
+    height: 1.2rem;
+    border-radius: 2rem;
+    bottom: 5.5rem;
+    box-shadow: 0 0px 2px black;
+}
+
+.eyelidL{
+    position: relative;
+    background: #f0d8b1;
+    width: 4rem;
+    border-radius: 2rem;
+    bottom: 5.5rem;
+    box-shadow: 0 0px 2px black;
+    z-index: 1;
+    animation: blink 5s ease-in-out infinite;
+}
+
+.eyepupilL{
+    background: #8f7364;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: .9rem;
+    box-shadow: 0 0px 2px black;
+}
+
+.eyeR{
+    background: white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 1.25rem;
+    box-shadow: 0 0px 2px black;
+}
+
+.eyebrowR{
+    position: relative;
+    background: black;
+    width: 4rem;
+    height: 1.2rem;
+    border-radius: 2rem;
+    bottom: 5.5rem;
+    box-shadow: 0 0px 2px black;
+}
+
+.eyelidR{
+    position: relative;
+    background: #f0d8b1;
+    width: 4rem;
+    border-radius: 2rem;
+    bottom: 5.5rem;
+    box-shadow: 0 0px 2px black;
+    z-index: 1;
+    animation: blink 5s ease-in-out infinite;
+}
+
+.eyepupilR{
+    background: #8f7364;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: .9rem;
+    box-shadow: 0 0px 2px black;
+}
+
+.mouth{
+    position: absolute;
+    background: white;
+    width: 61%;
+    height: 3.75rem;
+    border-bottom-left-radius: 80%;
+    border-bottom-right-radius: 80%;
+    left: 19%;
+    top: 13rem;
+    box-shadow: 0 0px 2px black;
+}
+
+.earL{
+    position: absolute;
+    background: #fce3bb;
+    width: 2.5rem;
+    height: 4rem;
+    border-radius: 50%;
+    left: -1.5rem;
+    top: 5.5rem;
+    z-index: -1;
+    box-shadow: 0 0px 2px black;
+}
+
+.earR{
+    position: absolute;
+    background: #fce3bb;
+    width: 2.5rem;
+    height: 4rem;
+    border-radius: 50%;
+    right: -1.5rem;
+    top: 5.5rem;
+    z-index: -1;
+    box-shadow: 0 0px 2px black;
+}
+
+.greet{
+    width: 30%;
+    margin: 0 5rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* main contents */
+
+.main-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 0;
+    height: 100%;
+    background-color: #DDC3A5;
+}
+
+.content{
+    margin-top: 2rem;
+    display: block;
+    width: 60%;
+}
+
+/* hide projects initially */
+.projects{
+    opacity: 0;
+    transform: translateY(150px);
+    transition: 1s all ease;
+}
+
+/* on scroll animation */
+.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.numbered-heading{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #201E20;
+}
+
+.numbered-heading::after{
+    content: "";
+    position: relative;
+    background-color: #201E20;
+    width: 20%;
+    height: 1px;
+    top: 15px;
+    margin-left: 15px;
+}
+
+.technology-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0.5rem 0;
+    list-style: none;
+    color: #201E20;
+    padding: 0;
+}
+
+.technology-list li{
+    position: relative;
+}
+
+.technology-list li::before{
+    content: "▹";
+    font-size: 1.5rem;
+    color: #201E20;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.YelpCampTech li:before{
+    content: "▹";
+    font-size: 1.5rem;
+    color: #201E20;
+}
+
+.YelpCampTech{
+    display: flex;
+    padding: 0;
+}
+
+.YelpCampTech li{
+    margin-right: 2rem;
+}
+
+.github-link:hover{
+    color: white;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+.footnote{
+    font-size: 15px;
+}
+
+/* keyframes */
+
+@keyframes blink{
+    100% { height: 0.7rem; }
+    2% { height: 100% }
+    5% { height: 0.7rem; }
+}
+
+@keyframes float {
+    50%  { transform: translate(0, 10px); }  
+}
+
+/* make a 950px break point */
+@media(max-width: 950px){
+    .YelpCampTech{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 0.5rem 0;
+        list-style: none;
+        color: #201E20;
+        padding: 0;
+    }
+}
+
+/* make a 700px break point  */
+@media(max-width: 690px){
+    .container{
+        flex-direction: column;
+    }
+    .greet{
+        margin-top: 2rem;
+    }
+}
+
+/* make a 512px break point */
+@media(max-width: 512px){
+    .side-bar-left{
+        display: none;
+    }
+    .side-bar-right{
+        display: none;
+    }
+}
