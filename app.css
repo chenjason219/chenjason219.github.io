@@ -376,18 +376,18 @@ a:visited, a:link{
     align-items: center;
 }
 
-.YelpCampTech li:before{
+.projectTech li:before{
     content: "▹";
     font-size: 1.5rem;
     color: #201E20;
 }
 
-.YelpCampTech{
+.projectTech{
     display: flex;
     padding: 0;
 }
 
-.YelpCampTech li{
+.projectTech li{
     margin-right: 2rem;
 }
 
@@ -420,7 +420,7 @@ a:visited, a:link{
 
 /* make a 950px break point */
 @media(max-width: 950px){
-    .YelpCampTech{
+    .projectTech{
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 0.5rem 0;
