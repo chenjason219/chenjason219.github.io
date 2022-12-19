@@ -32,6 +32,11 @@ a{
     text-decoration: none;
 }
 
+a:visited, a:link{
+    text-decoration: none;
+    color: #201E20;
+}
+
 /* sidebars */
 .side-bar-right{
     position: fixed;
