@@ -33,7 +33,6 @@ a{
 }
 
 a:visited, a:link{
-    text-decoration: none;
     color: #201E20;
 }
 
@@ -100,6 +99,12 @@ a:visited, a:link{
 
 .fa-brands:hover{
     color: red;
+    transform: scale(1.2);
+    transition: ease 0.2s;
+}
+
+.visit:hover{
+    color: white;
     transform: scale(1.2);
     transition: ease 0.2s;
 }
