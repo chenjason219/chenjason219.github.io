@@ -21,10 +21,6 @@ p{
     text-align: left;
 }
 
-.layout{
-    height: 100vh;
-}
-
 ul,li {
     list-style: none;
 }
@@ -73,7 +69,9 @@ a:visited, a:link{
 }
 
 .email:hover{
-    color: white;
+    color: red;
+    transform: scale(1.1);
+    transition: ease 0.2s;
 }
 
 .socials{
@@ -98,14 +96,9 @@ a:visited, a:link{
     color: #201E20;
 }
 
-.fa-brands:hover{
-    color: red;
-    transform: scale(1.2);
-    transition: ease 0.2s;
-}
-
+.fa-brands:hover,
 .visit:hover{
-    color: white;
+    color: red;
     transform: scale(1.2);
     transition: ease 0.2s;
 }
@@ -190,7 +183,7 @@ a:visited, a:link{
     justify-content: center;
 }
 
-.eyeL{
+.eye{
     background: white;
     width: 4rem;
     height: 4rem;
@@ -199,7 +192,7 @@ a:visited, a:link{
     box-shadow: 0 0px 2px black;
 }
 
-.eyebrowL{
+.eyebrow{
     position: relative;
     background: black;
     width: 4rem;
@@ -209,7 +202,7 @@ a:visited, a:link{
     box-shadow: 0 0px 2px black;
 }
 
-.eyelidL{
+.eyelid{
     position: relative;
     background: #f0d8b1;
     width: 4rem;
@@ -220,46 +213,7 @@ a:visited, a:link{
     animation: blink 5s ease-in-out infinite;
 }
 
-.eyepupilL{
-    background: #8f7364;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    margin: .9rem;
-    box-shadow: 0 0px 2px black;
-}
-
-.eyeR{
-    background: white;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    margin: 1.25rem;
-    box-shadow: 0 0px 2px black;
-}
-
-.eyebrowR{
-    position: relative;
-    background: black;
-    width: 4rem;
-    height: 1.2rem;
-    border-radius: 2rem;
-    bottom: 5.5rem;
-    box-shadow: 0 0px 2px black;
-}
-
-.eyelidR{
-    position: relative;
-    background: #f0d8b1;
-    width: 4rem;
-    border-radius: 2rem;
-    bottom: 5.5rem;
-    box-shadow: 0 0px 2px black;
-    z-index: 1;
-    animation: blink 5s ease-in-out infinite;
-}
-
-.eyepupilR{
+.eyepupil{
     background: #8f7364;
     width: 2.5rem;
     height: 2.5rem;
@@ -318,7 +272,7 @@ a:visited, a:link{
     flex-direction: column;
     padding: 3rem 0;
     height: 100%;
-    background-color: #DDC3A5;
+    background-color: #f0e9e0;
 }
 
 .content{
@@ -399,10 +353,6 @@ a:visited, a:link{
 
 .projectTech li{
     margin-right: 2rem;
-}
-
-.github-link:hover{
-    color: white;
 }
 
 /* footer */
