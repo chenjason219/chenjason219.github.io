@@ -8,10 +8,21 @@ const reveal = () => {
 
         if(elementTop < windowHeight - elementVisible){
             content.classList.add('active');
-        } else {
-            content.classList.remove('active');
         }
     }
 }
 
 window.addEventListener("scroll", reveal);
+
+const observer =  new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    })
+})
+
+const hiddenItems = document.querySelectorAll('.hidden');
+
+hiddenItems.forEach((el) => observer.observe(el));
+
