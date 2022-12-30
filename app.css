@@ -100,7 +100,7 @@ a:visited, a:link{
 .visit:hover{
     color: red;
     transform: scale(1.2);
-    transition: ease 0.2s;
+    transition: ease-in-out 0.2s;
 }
 
 /* head and greet */
@@ -285,7 +285,7 @@ a:visited, a:link{
 .projects{
     opacity: 0;
     transform: translateY(150px);
-    transition: 1s all ease;
+    transition: 0.8s all ease;
 }
 
 /* on scroll animation */
@@ -328,6 +328,38 @@ a:visited, a:link{
     content: "▹";
     font-size: 1.5rem;
     color: #201E20;
+}
+
+/* list animation */
+.hidden{
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+}
+
+.listItem:nth-child(2),
+.listItem:nth-child(7){
+    transition-delay: 0.25s;
+}
+
+.listItem:nth-child(3),
+.listItem:nth-child(8){
+    transition-delay: 0.5s;
+}
+
+.listItem:nth-child(4),
+.listItem:nth-child(9){
+    transition-delay: 0.75s;
+}
+
+.listItem:nth-child(5),
+.listItem:nth-child(10){
+    transition-delay: 1s;
 }
 
 .wrapper{
